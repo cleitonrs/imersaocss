@@ -1,12 +1,56 @@
+/* soft reset do css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url(../imagens/city.jpg);
+    background-image: url('../img/fundo.jpg');
     background-size: auto 100vh;
     font-family: Arial;
     height: 100vh; 
 }
 
+/* se  a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+header {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .menu {
-    background-color: whitesmoke;
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
 }
 
 .menu ul {
@@ -25,17 +69,27 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: cyan;
 }
 
 .site-subtitle,
 .site-title {
     background-color: black;
-    border: none;
+    border: double;
+    border-width: 10px;
+    border-radius: 20px;
     color: cyan;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
-    border-radius: 15px;
 }
 
 .site-subtitle {
     font-style: italic;
+    font-size: 2em;
+}
+
+.img-portfolio {
+    height: 180px;
+    width: 180px;
 }
