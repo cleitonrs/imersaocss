@@ -1,12 +1,12 @@
 body {
-    background-image: url('http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg'); 
-    background-size: auto 100vh; /*viewport height (100vh em %) com largura automática*/
+    background-image: url(../imagens/city.jpg);
+    background-size: auto 100vh;
     font-family: Arial;
     height: 100vh; 
 }
 
 .menu {
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .menu ul {
@@ -29,8 +29,11 @@ a:hover {
 
 .site-subtitle,
 .site-title {
-    color: whitesmoke;
+    background-color: black;
+    border: none;
+    color: cyan;
     text-align: center;
+    border-radius: 15px;
 }
 
 .site-subtitle {
