@@ -7,10 +7,10 @@
 
 body {
     background-image: url('../img/fundo.jpg');
-    background-size: auto 100vh;
-    font-family: Arial;
-    height: 100vh; 
+    background-size: 100vw 100vh;
+    font-family: 'Source Code Pro', monospace;
 }
+
 
 /* se  a tela tiver pelo menos 400px vai carregar estes estilos */
 @media (min-width: 400px) {
@@ -46,6 +46,7 @@ header {
     position: fixed;
     width: 100vw;
     top: 0;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .menu a {
@@ -74,22 +75,65 @@ a:hover {
 
 .site-subtitle,
 .site-title {
-    background-color: black;
-    border: double;
-    border-width: 10px;
-    border-radius: 20px;
-    color: cyan;
-    padding-left: 10px;
-    padding-right: 10px;
+    color: white;
+    text-shadow: 5px 5px 5px indigo;
     text-align: center;
+}
+
+.site-title {
+    font-size: 3em;
+    font-family: 'Press Start 2P', cursive;
+
 }
 
 .site-subtitle {
     font-style: italic;
     font-size: 2em;
+    font-family: 'Source Code Pro', monospace;
+    height: 35vh;
+}
+
+.portfolio {
+    padding: 2em;
+    height: 100vh;
+}
+
+.portfolio h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    text-shadow: 3px 3px 3px indigo;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media (min-width: 880px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(3, 260px);
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh - 8em - 48px);
+    }
+}
+
+.portfolio figure {
+    text-align: center;
+    text-shadow: 3px 3px 3px indigo;
+    color: white;
 }
 
 .img-portfolio {
     height: 180px;
-    width: 180px;
+    width: 240px;
+    object-fit: cover;
 }
