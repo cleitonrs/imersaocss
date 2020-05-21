@@ -5,43 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cleiton Santos</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@500&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@500&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba0b2d5ef5.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <header>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+            <ul class="container">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div>
             <h1 class="site-title">Cleiton Santos</h1>
-            <h2 class="site-subtitle">web developer</h2>
+            <h2 class="site-subtitle typewriter">fron-end developer</h2>
         </div>
     </header>
-    <section class="portfolio">
+    <section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+
+        <figure class="avatar">
+            <img class="foto" src="./img/Cleiton.jpg" alt="Cleiton Santos">
+        </figure>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, laborum laudantium qui molestias error dolore consequatur perferendis eius impedit id atque et dicta facilis assumenda accusantium nobis natus, optio doloremque.
+        </p>
+
+        <p>
+            Cupiditate, dignissimos ab provident deserunt delectus vitae voluptatum ducimus quas. Natus, ipsam vero. Consectetur a dolores nobis blanditiis suscipit veritatis necessitatibus velit, nemo sed! Deleniti esse nesciunt sed consectetur incidunt.
+        </p>
+
+        <p>
+            Porro repellendus quam architecto sed aspernatur numquam, eaque, velit voluptas a assumenda facilis ut? Voluptates recusandae, ex quibusdam itaque culpa rem totam nulla. Nemo tempore nesciunt asperiores dolore eius ipsum.
+        </p>
+
+        <p>
+            Aliquid natus deserunt nulla ad, nostrum dolores magnam quod ab, voluptatibus doloribus perferendis consectetur debitis? Repellendus cum quisquam eligendi aliquam facilis natus, cumque culpa ipsa autem, officiis in, eos quidem.
+        </p>
+    </section>
+    <section class="portfolio container" id="portfolio">
         <h2>Projetos</h2>
 
         <div class="grid">
             <figure>
-                <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="ecomerce">
-                <figcaption>eCommerce</figcaption>
+                <img class="img-portfolio" src="./img/htmlcss.jpg" alt="htmlcss">
+                <figcaption>html/css</figcaption>
             </figure>
             <figure>
-                <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt="mobile">
+                <img class="img-portfolio" src="./img/mobile.jpg" alt="mobile">
                 <figcaption>Mobile</figcaption>
             </figure>
             <figure>
-                <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="web design">
+                <img class="img-portfolio" src="./img/webdesign.jpg" alt="web design">
                 <figcaption>Web design</figcaption>
             </figure>
             <figure>
-                <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="projetos pessoais">
-                <figcaption>Projetos pessoa</figcaption>
+                <img class="img-portfolio" src="./img/programacao.jpg" alt="projetos pessoais">
+                <figcaption>Projetos pessoais</figcaption>
             </figure>
         </div>  
+    </section>
+    <section class="contato container" id="contato">
+        <h2>Contato</h2>
+
+        <div class="grid icons">
+            <a target="_blank" href="https://github.com/cleitonrs"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="mailto:rscleitonrs@gmail.com"><i class="far fa-envelope"></i></a>
+            <a target="_blank" href="https://api.whatsapp.com/send?1=pt_BR&phone=5573988336829"><i class="fab fa-whatsapp"></i></a>
+        </div>
     </section>
 </body>
 </html>
